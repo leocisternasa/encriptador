@@ -8,7 +8,6 @@
 
 .logo {
   margin-top: 4.5vh;
-  margin-left: 5vw;
 }
 
 main {
@@ -19,6 +18,8 @@ main {
 
 .instruccion {
   display: flex;
+  margin-left: 100px;
+  margin-top: 70px;
 }
 
 .text-area {
@@ -26,6 +27,11 @@ main {
   text-transform: lowercase;
   margin-top: 10.5vh;
   color: #0a3871;
+  margin-left: 100px;
+}
+
+.text-area::placeholder {
+  text-transform: none;
 }
 
 ::placeholder {
@@ -36,24 +42,37 @@ main {
 }
 
 .mensaje {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
   background-color: white;
-  background-image: url(./imagenes/Muñeco.png);
   background-repeat: no-repeat;
   border: none;
   border-radius: 24px;
-  position: fixed;
   color: #0a3871;
-  margin-top: 2.5vh;
-  margin-left: 6vw;
+  margin-right: 40px;
   padding-left: 1vw;
+  width: 400px;
+  height: 800px;
+  margin-block-start: initial;
 }
 .mensaje:focus {
   outline: none;
 }
 
+.img-div {
+  background-color: white;
+  margin-top: 100px;
+}
+
 .botones {
   display: flex;
   margin-top: 2vh;
+  margin-left: 100px;
 }
 
 .btn-encriptar {
@@ -67,6 +86,10 @@ main {
   font-size: 16px;
   line-height: 19.36px;
   align-self: center;
+}
+
+.btn-encriptar:hover {
+  background-color: #1f5bc5;
 }
 
 .btn-desencriptar {
@@ -83,25 +106,79 @@ main {
   align-self: center;
 }
 
+.btn-desencriptar:hover {
+  background-color: #c2c7d0;
+}
+
+.div-parrafos {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parrafo1 {
+  background-color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: unset;
+}
+
+.parrafo2 {
+  background-color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+
+.parrafo-mensaje {
+  background-color: white;
+  font-size: 24px;
+  color: #0a3871;
+  height: 300px;
+  padding: 100px 50px 100px 50px;
+  margin-top: 10px;
+  margin-bottom: 170px;
+  border: none;
+}
+
+.mensaje-preliminar {
+  background-color: white;
+  height: auto;
+  margin-top: 10px;
+}
+
+.div-btn-copiar {
+  height: 30px;
+  background-color: white;
+}
+
 .btn-copiar {
   background: #d8dfe8;
   border: 1px solid #0a3871;
   color: #0a3871;
   border-radius: 24px;
-  margin-left: 100px;
-  margin-top: 550px;
+  margin-left: 30px;
   height: 67px;
   width: 336px;
   cursor: pointer;
   font-size: 16px;
   line-height: 19.36px;
-  align-self: center;
+}
+
+.btn-copiar:hover {
+  background-color: #c2c7d0;
+}
+.section-mensaje {
+  margin-left: 80px;
+  margin-top: 20px;
 }
 
 .informacion {
   font-size: 16px;
   color: #495057;
   line-height: 18px;
+  margin-top: 30px;
 }
 
 .img-exclama {

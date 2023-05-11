@@ -6,9 +6,10 @@ const llaves = {
   u: "ufat",
 };
 
-function encriptar(str) {
-  let strLowercase = str.toLowerCase();
-  let strArr = [...strLowercase];
+function encriptar() {
+  let textoAencriptar = document.getElementById("txt-encriptador").value;
+  let textLowercase = textoAencriptar.toLowerCase();
+  let strArr = [...textLowercase];
   let strEncriptado = "";
 
   strArr.forEach((character) => {
@@ -32,12 +33,16 @@ function encriptar(str) {
         strEncriptado += character;
     }
   });
-
-  return strEncriptado;
+  console.log(strEncriptado);
+  let elEncriptado = document.getElementById("mensaje-preliminar");
+  elEncriptado.innerHTML = `<textarea cols="20" rows="180" class="parrafo-mensaje" id="msj-clipboard">${strEncriptado}</textarea><div class="div-btn-copiar">
+  <button class="btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
+</div>`;
 }
 
-function desencriptar(str) {
-  let strLowercase = str.toLowerCase();
+function desencriptar() {
+  let textoDesencriptar = document.getElementById("txt-encriptador").value;
+  let strLowercase = textoDesencriptar.toLowerCase();
   for (let prop in llaves) {
     // si str incluye prperty, se reemplaza property por
     if (strLowercase.includes(llaves[prop])) {
@@ -45,5 +50,21 @@ function desencriptar(str) {
       strLowercase = strLowercase.replaceAll(llaves[prop], prop);
     }
   }
-  return strLowercase;
+  let elEncriptado = document.getElementById("mensaje-preliminar");
+  elEncriptado.innerHTML = `<textarea cols="20" rows="180" class="parrafo-mensaje" id="msj-clipboard">${strLowercase}</textarea><div class="div-btn-copiar">
+  <button class="btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
+</div>`;
+}
+
+function copiar() {
+  let texto = document.getElementById("msj-clipboard").value;
+
+  navigator.clipboard
+    .writeText(texto)
+    .then(() => {
+      console.log("Texto copiado al portapapeles");
+    })
+    .catch((error) => {
+      console.error("Error al copiar el texto", error);
+    });
 }
