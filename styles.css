@@ -301,7 +301,7 @@ main {
   }
   .text-area {
     margin-left: 0px;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 48px;
     resize: none;
   }
@@ -313,18 +313,18 @@ main {
     margin-top: 0px;
   }
   .h-xs {
-    height: 500px;
+    height: 300px;
   }
   .btn-encriptar {
-    width: 470px;
-    height: 80px;
-    font-size: larger;
+    width: 320px;
+    height: 50px;
+    font-size: large;
   }
 
   .btn-desencriptar {
-    width: 470px;
-    height: 80px;
-    font-size: larger;
+    width: 320px;
+    height: 50px;
+    font-size: large;
     margin-left: 0px;
   }
 
@@ -332,7 +332,7 @@ main {
     flex-wrap: wrap;
     margin-left: 0px;
     margin-top: 0px;
-    gap: 25px;
+    gap: 15px;
   }
   .img-div {
     display: none;
@@ -340,13 +340,13 @@ main {
     margin-top: 100px;
   }
   .informacion {
-    font-size: 18px;
+    font-size: 16px;
     color: #495057;
     line-height: 0px;
     margin-top: 8px;
   }
   .mensaje {
-    width: 446px;
+    width: 310px;
     align-content: center;
     height: auto;
     overflow: hidden;
@@ -359,7 +359,7 @@ main {
   .parrafo-mensaje {
     margin-bottom: 0px;
     margin-top: 0px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 0px;
   }
   .div-btn-copiar {
@@ -370,7 +370,8 @@ main {
     background-color: white;
   }
   .parrafo1 {
-    font-size: 25px;
+    font-size: 23px;
+    text-align: center;
   }
   .parrafo2 {
     font-size: 19px;
@@ -379,6 +380,13 @@ main {
     margin-bottom: 20px;
   }
   .logo {
-    height: 52px;
+    height: 42px;
+  }
+  .txt-encriptado {
+  }
+  .btn-copiar {
+    width: 300px;
+    height: 50px;
+    font-size: large;
   }
 }
