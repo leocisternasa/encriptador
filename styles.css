@@ -28,6 +28,7 @@ main {
   margin-top: 10.5vh;
   color: #0a3871;
   margin-left: 100px;
+  resize: none;
 }
 
 .text-area::placeholder {
@@ -140,6 +141,7 @@ main {
   margin-top: 10px;
   margin-bottom: 170px;
   border: none;
+  resize: none;
 }
 
 .div-btn-copiar {
@@ -213,6 +215,7 @@ main {
     height: 250px;
     width: 550px;
     margin-bottom: 100px;
+    resize: none;
   }
   .instruccion {
     display: flex;
@@ -300,6 +303,7 @@ main {
     margin-left: 0px;
     font-size: 40px;
     line-height: 48px;
+    resize: none;
   }
   .section-xs {
     width: fit-content;
