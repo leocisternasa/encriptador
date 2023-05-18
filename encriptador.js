@@ -35,8 +35,21 @@ function encriptar() {
   });
   console.log(strEncriptado);
   let elEncriptado = document.getElementById("mensaje-preliminar");
-  elEncriptado.innerHTML = `<textarea cols="20" rows="180" class="parrafo-mensaje" id="msj-clipboard">${strEncriptado}</textarea><div class="div-btn-copiar">
-  <button class="btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
+  elEncriptado.innerHTML = `<div class="mkwhite">
+  <div class="div-textarea">
+    <textarea
+      cols="20"
+      rows="30"
+      class="parrafo-mensaje"
+      id="msj-clipboard"
+    >${strEncriptado}
+    </textarea>
+  </div>
+  <div class="div-btn-copiar">
+    <button class="btn-copiar" id="btn-copiar" onclick="copiar()">
+      Copiar
+    </button>
+  </div>
 </div>`;
 }
 
@@ -51,8 +64,21 @@ function desencriptar() {
     }
   }
   let elEncriptado = document.getElementById("mensaje-preliminar");
-  elEncriptado.innerHTML = `<textarea cols="20" rows="180" class="parrafo-mensaje" id="msj-clipboard">${strLowercase}</textarea><div class="div-btn-copiar">
-  <button class="btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
+  elEncriptado.innerHTML = `<div class="mkwhite">
+  <div class="div-textarea">
+    <textarea
+      cols="20"
+      rows="30"
+      class="parrafo-mensaje"
+      id="msj-clipboard"
+    >${strLowercase}
+    </textarea>
+  </div>
+  <div class="div-btn-copiar">
+    <button class="btn-copiar" id="btn-copiar" onclick="copiar()">
+      Copiar
+    </button>
+  </div>
 </div>`;
 }
 
